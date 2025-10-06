@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import styles from './ProductItem.module.scss';
 
 function ProductItem({ product }) {
@@ -25,7 +26,7 @@ function ProductItem({ product }) {
                         <div className={styles.data}>${product.stock}</div>
                     </div>
                 </div>
-                <button className={styles.button}>View Details</button>
+                <Link to={`/product/${product.slug}`} className={styles.button}>View Details</Link>
             </div>
         </div>
     )

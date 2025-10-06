@@ -16,7 +16,7 @@ const AppRoutes = () => {
                 <Route element={<DefaultLayout />}>
                     <Route index path="/" element={<Home />} />
                     <Route path="/products" element={ <ProductList />} />
-                    <Route path="/products/:slug" element={ <ProductDetail />} />
+                    <Route path="/product/:slug" element={ <ProductDetail />} />
                 </Route>
             </Routes>
         </HashRouter>

@@ -1,7 +1,8 @@
-import { SET_LIST } from "./constants";
+import { GET_DETAIL, GET_LIST, SET_DETAIL, SET_LIST } from "./constants";
 
 const initialState = {
-    list: []
+    list: [],
+    detail: null
 }
 
 const reducer = (state = initialState, action) => {
@@ -12,6 +13,25 @@ const reducer = (state = initialState, action) => {
                 list: action.payload
             }
         }
+
+        // case GET_LIST: {
+        //     return {
+        //         ...state
+        //     }
+        // }
+
+        case SET_DETAIL: {
+            return {
+                ...state,
+                detail: action.payload
+            }
+        }
+
+        // case GET_DETAIL: {
+        //     return {
+        //         ...state
+        //     }
+        // }
 
         default:
             return state;
