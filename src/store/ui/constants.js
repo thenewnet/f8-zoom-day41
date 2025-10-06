@@ -1,0 +1,7 @@
+const NAMESPACE = "ui";
+
+//action types
+const SHOW_LOADING = `${NAMESPACE}/SHOW_LOADING`;
+const HIDE_LOADING = `${NAMESPACE}/HIDE_LOADING`;
+
+export { SHOW_LOADING, HIDE_LOADING };

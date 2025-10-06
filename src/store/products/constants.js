@@ -1,0 +1,9 @@
+const NAMESPACE = "products";
+
+//action types
+const GET_LIST = `${NAMESPACE}/GET_LIST`;
+const SET_LIST = `${NAMESPACE}/SET_LIST`;
+const GET_DETAIL = `${NAMESPACE}/GET_DETAIL`;
+const SET_DETAIL = `${NAMESPACE}/SET_DETAIL`;
+
+export { GET_LIST, SET_LIST, GET_DETAIL, SET_DETAIL };

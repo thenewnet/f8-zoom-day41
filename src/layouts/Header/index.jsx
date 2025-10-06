@@ -10,6 +10,10 @@ function Header(){
         {
             label: 'Trang chủ',
             to: '/'
+        },
+        {
+            label: 'Sản phẩm',
+            to: '/products'
         }
     ]
     return (
